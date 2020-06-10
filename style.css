@@ -1,5 +1,5 @@
 body{
-  background-image: url(back11.jpg);
+  background-image: url(back1.jpg);
   background-repeat: space;
   background-size: cover;
   background-attachment: fixed;
@@ -7,5 +7,5 @@ body{
 .hero{
   font-family: cursive;
   font-style: italic;
-
+  color: red;
 }
