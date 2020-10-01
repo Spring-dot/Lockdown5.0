@@ -9,6 +9,10 @@
   <title>Lockdown5.0</title>
 </head>
 <body>
+  <div class="mode"> 
+        Dark mode:              
+        <span class="change">OFF</span> 
+    </div> 
 <div class="container">
   <h1 class="hero display-1">Quarantine days!!</h1>
   <h2 class="tit">An Inevitable Time We Spent...With Our beloved Ones...</h2>
@@ -42,7 +46,17 @@
   </div>
   </div>
 
-
+<script> 
+        $( ".change" ).on("click", function() { 
+            if( $( "body" ).hasClass( "dark" )) { 
+                $( "body" ).removeClass( "dark" ); 
+                $( ".change" ).text( "OFF" ); 
+            } else { 
+                $( "body" ).addClass( "dark" ); 
+                $( ".change" ).text( "ON" ); 
+            } 
+        }); 
+    </script> 
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
